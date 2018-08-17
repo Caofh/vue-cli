@@ -1,4 +1,4 @@
-# vue-cli
+# vue-cli的一个空项目示例
 
 > vue-cli-test
 
