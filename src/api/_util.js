@@ -30,6 +30,8 @@ function callApi (apiRoot = '/') {
       baseURL: apiRoot,
       timeout: 10000,
       // headers: { 'Authorization': token }
+      headers: {'content-type': 'application/x-www-form-urlencoded'} // php接口的post上传你数组使用此类型
+      // headers: {'content-type': 'application/json;charset=UTF-8' } // nodejs接口的post上传你数组使用此类型
     })
 
   obj.interceptors.request.use(config => {
